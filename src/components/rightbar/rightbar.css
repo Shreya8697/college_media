@@ -57,6 +57,17 @@
 .rightbarInfoValue{
     font-weight: 300;
 }
+.rightbarFollowings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rightbarfollowing{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
 
 .rightbarFollowingImg{
     height: 100px;
