@@ -9,6 +9,7 @@ import {Groups} from "@mui/icons-material";
 import {Event} from "@mui/icons-material";
 import { Users } from "../../dummyData";
 import CloseFriend from "../closeFriend/CloseFriend";
+import { Link } from "react-router-dom";
 
 
 
@@ -18,8 +19,10 @@ export default function Sidebar() {
         <div className="siderbarWrapper">
           <ul className="sidebarList">
             <li className="sidebarListItem">
+            <Link to="/" style={{ textDecoration: "none", color:"inherit"}}>
               <RssFeed className="sidebarIcon"/>
               <span className="sidebarlistItemText">Feed</span>
+              </Link>
             </li>
             <li className="sidebarListItem">
               <Notes className="sidebarIcon"/>
@@ -38,8 +41,10 @@ export default function Sidebar() {
               <span className="sidebarlistItemText">Bookmarks</span>
             </li>
             <li className="sidebarListItem">
+            <Link to="/messenger" style={{ textDecoration: "none", color: "inherit" }}>
               <Chat className="sidebarIcon"/>
               <span className="sidebarlistItemText">Chats</span>
+            </Link>
             </li>
             <li className="sidebarListItem">
               <Groups className="sidebarIcon"/>
@@ -50,7 +55,7 @@ export default function Sidebar() {
               <span className="sidebarlistItemText">Test Event</span>
             </li>
           </ul>
-          <button className="sidebarButton">Show Moare</button>
+          <button className="sidebarButton">Show More</button>
           <hr className="sidebarHr"/>
           <ul className="sidebarFriendList">
             {Users.map((u) => (

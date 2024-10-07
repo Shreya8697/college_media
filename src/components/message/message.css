@@ -1,0 +1,120 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .messageTop{
+      display: flex;
+      
+  }
+  
+  .messageImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+  
+  .messageText{
+      padding: 10px;
+      border-radius: 20px;
+      background-color: #27acac;
+      color: white;
+      max-width: 300px;
+  }
+  
+  .messageBottom{
+      font-size: 12px;
+      margin-top: 10px;
+      color: rgb(131, 142, 153);
+  }
+  
+  .message.own{
+      align-items: flex-end;
+  }
+  
+  .message.own .messageText{
+      background-color: rgb(245, 241, 241);
+      color: black;
+      padding: 10px;
+      border-radius: 20px;
+  }
+  
+  .dateLabel {
+    text-align: center;
+    font-size: 12px;
+    color: #f3dddd;
+    margin: 10px 0;
+}
+.messageSelectCheckbox {
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+  
+  .messageImg {
+    border-radius: 50%; /* Optional: make profile images circular */
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+  }
+
+  .messageOptions {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 10;
+    cursor: pointer;
+  }
+  
+  .editBtn,  .saveBtn {
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .deleteBtn{
+    padding: 5px;
+    background-color: #c72323;
+    border: 1px solid rgb(216, 23, 23);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .editBtn:hover,.saveBtn:hover {
+    background-color: rgb(60, 161, 165);
+  }
+  .deleteBtn:hover{
+    background-color: rgb(214, 56, 56);
+  }
+  
+  .messageEditInput {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+  }
+  
+  .editedIndicator {
+    font-size: 12px;
+    color: gray;
+    margin-left: 10px;
+  }
+
+  .editMessageInput{
+    background-color: rgb(245, 241, 241);
+      color: black;
+      padding: 10px;
+      border-radius: 20px;
+      border-color: none;
+  }
+  .emojiPickerContainer {
+    z-index: 1000; /* Ensure the emoji picker appears above other elements */
+    bottom: 100%; /* Adjust to position above the button */
+    left: 0; /* Align with the left of the button */
+    transform: translateY(-10px); /* Adjust spacing above */
+  }
+  

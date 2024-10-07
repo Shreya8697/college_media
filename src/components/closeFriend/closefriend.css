@@ -10,3 +10,36 @@
     border-radius: 50%;
     margin-right: 10px;
 }
+
+/* closefriend.css */
+
+.sidebarFriend {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+  
+  .sidebarFriend.pinned {
+    background-color: #f0f8ff; /* Light blue background for pinned friends */
+  }
+  
+  .sidebarFriendImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .sidebarFriendName {
+    flex: 1;
+  }
+  
+  .pinButton {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+  }
+  

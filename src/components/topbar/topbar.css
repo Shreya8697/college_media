@@ -89,5 +89,11 @@
 .serachInput:focus{
     outline: none;
 }
+.logoImage {
+    margin-left: 20px;
+    height: 40px; /* Adjust as needed */
+    width: auto;  /* Maintain aspect ratio */
+    /* Add any additional styles like margin or padding */
+  }
 
 

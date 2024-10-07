@@ -1,0 +1,168 @@
+.messenger {
+    height: calc(100vh - 70px);
+    display: flex;
+    /* background-color: rgb(119, 126, 123); */
+  }
+  
+  .chatMenu {
+    flex: 3.5;
+  }
+  
+  .chatMenuInput {
+    width: 90%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  
+  .chatBox {
+    flex: 5.5;
+  }
+  
+  .chatBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .chatBoxTop {
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+    
+  }
+  
+  .chatBoxBottom {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .chatMessageInput {
+    width: 80%;
+    height: 90px;
+    padding: 10px;
+    font-size: medium;
+  }
+  
+  .chatSubmitButton {
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+  }
+  
+  .chatOnline {
+    flex: 3;
+  }
+  
+  .chatMenuWrapper,
+  .chatBoxWrapper,
+  .chatOnlineWrapper {
+    padding: 10px;
+    height: 100%;
+  }
+  
+  .noConversationText {
+    position: absolute;
+    top: 10%;
+    font-size: 50px;
+    color: rgb(224, 220, 220);
+    cursor: default;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .chatMenu {
+      flex: 1;
+    }
+  
+    .chatMenuInput {
+      display: none;
+    }
+  
+    .chatBox{
+      flex: 10;
+    }
+  
+    .chatOnline{
+      flex: 1px;
+    }
+  }
+  
+
+  .shareBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+ .shareOptions{
+    display: flex;
+    margin-right: 15px;
+ }
+ .shareOption{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+ }
+ .shareIcon{
+    font-size: 15px;
+    margin-right: 3px;  
+ }
+ .ShareOptionText{
+    font-size: 14px;
+    font-weight:  500;
+ }
+ .shareButton{
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: green;
+    font-weight: 500;
+    cursor: pointer;
+    color: aliceblue;
+    margin-left: 30px;
+ }
+ 
+.shareImgContainer{
+   padding: 0 20px 10px 20px;
+   position: relative;
+ }
+ 
+ .shareImg{
+   width: 100%;
+   object-fit: cover;
+ }
+ 
+ .shareCancelImg{
+   position: absolute;
+   top: 0;
+   right: 20px;
+   cursor: pointer;
+   opacity: 0.7;
+ }
+ .emojiPicker {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  cursor: move; /* Shows that it is draggable */
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ .dateSeparator {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #2599ad; /* Adjust color as needed */
+}

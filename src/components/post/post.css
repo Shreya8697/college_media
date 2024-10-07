@@ -34,7 +34,7 @@
     font-size: 13px;
 }
 .postCenter{
-    margin: 20px 0;
+    margin: 15px 0;
 }
 .postImg{
     margin-top: 20px;
@@ -49,11 +49,18 @@
 }
 .postBottomLeft{
     display: flex;
+    
     align-items: center;
+}
+.postHeartIcon{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    cursor: pointer;
 }
 .postLikeIcon{
     width: 24px;
-    height: 20px;
+    height: 24px;
     margin-right: 5px;
     cursor: pointer;
 }
@@ -65,3 +72,100 @@
     border-bottom: 1px dashed gray;
     font-size: 15px;
 }
+    .popupMenu {
+        position: absolute;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        z-index: 100;
+      }
+      
+      
+      .popupOption {
+        display: block;
+        padding: 10px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+      }
+      
+      .popupOption:hover {
+        background-color: #f0f0f0;
+      }
+      /* .emojiPicker {
+        position: absolute;
+        top: 1px;
+        right: 10px;
+        z-index: 100;
+        /* background-color: rgba(72, 153, 167, 0.712); */
+        /* border: 0px solid #ddd;
+        border-radius: 10px;
+        padding: 1px;  
+        width: 250px; /* Set a smaller width */
+        /* height: 300px; /* Ensure it's above other elements */
+      /* }  */ *
+
+      .editButtons {
+        display: flex;
+        justify-content: flex-end; /* Align buttons to the right */
+        gap: 5px; /* Optional: Adds space between the buttons */
+    }
+    
+    .saveButton {
+        background: rgb(66, 180, 66);
+        cursor: pointer;
+        border: none;
+        padding: 8px 15px; /* Optional: Adds padding for better appearance */
+        color: white; /* Optional: Makes the text white */
+        border-radius: 5px; /* Optional: Rounds the button corners */
+    }
+    
+    .cancelButton {
+        background: rgb(165, 69, 69);
+        cursor: pointer;
+        border: none;
+        padding: 8px 15px; /* Optional: Adds padding for better appearance */
+        color: white; /* Optional: Makes the text white */
+        border-radius: 5px; /* Optional: Rounds the button corners */
+    }
+    .postEditInput {
+        width: 100%; /* Make the input span the full width of the container */
+        padding: 10px; /* Add padding for better appearance */
+        border: 1px solid #ccc; /* Add border to make the input more visible */
+        border-radius: 4px; /* Round the corners */
+        box-sizing: border-box; /* Ensure padding and border are included in the width */
+        font-size: 16px; /* Optional: Increase font size for better readability */
+    }
+    
+    .editButtons {
+        display: flex;
+        justify-content: flex-end; /* Align buttons to the right */
+        gap: 10px; /* Optional: Adds space between the buttons */
+        margin-top: 10px; /* Adds space above the buttons */
+    }
+    .emojiPickerWrapper {
+        position: relative;
+      }
+      
+      .emojiPickerButton {
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      
+      .emojiPicker {
+        position: absolute;
+        bottom: 60px; /* Adjust based on your layout */
+        left: 0;
+      }
+      
+    
+
+      
+  

@@ -27,7 +27,7 @@
     font-size: 24px;
 }
 .loginBox{
-    height: 300px;
+    height: 400px;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -55,15 +55,10 @@
     font-weight: 500;
     cursor: pointer;
 }
-.loginButton:focus{
-    outline: none;
-}
-.loginButton:disabled{
-    cursor: not-allowed;
-}
 .loginForgot{
     text-align: center;
     color:#4ba8dd ;
+    cursor: pointer;
 }
 .loginRegisterButton{
     width: 60%;
@@ -76,5 +71,4 @@
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
-    align-items: center;
 }
