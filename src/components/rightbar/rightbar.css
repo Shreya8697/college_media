@@ -69,6 +69,10 @@
     cursor: pointer;
 }
 
+.rightbarFollowingName{
+    margin-left: 20px;
+}
+
 .rightbarFollowingImg{
     height: 100px;
     width: 100px;
@@ -93,3 +97,5 @@
 .rightbarFollowButton:focus{
     outline: none;
 }
+
+  

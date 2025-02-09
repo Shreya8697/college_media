@@ -30,6 +30,8 @@ import { format, isToday, isYesterday, parseISO } from 'date-fns';
 //   }
 // };
 
+
+
 const groupMessagesByDate = (messages) => {
   const grouped = messages.reduce((acc, message) => {
     const date = parseISO(message.createdAt);
@@ -39,7 +41,7 @@ const groupMessagesByDate = (messages) => {
       acc[key] = [];
     }
     acc[key].push(message);
-    return acc;
+    return acc;     
   }, {});
 
   return Object.entries(grouped);
@@ -156,7 +158,7 @@ export default function Messenger() {
 
   useEffect(() => {
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+  }, [messages]);     
 
   const onEmojiClick = (e) => {
     setNewMessage((prev) => prev + e.emoji);

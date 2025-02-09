@@ -49,3 +49,47 @@
     color: gray;
   }
   
+  /* conversation.css */
+.conversation {
+  position: relative;
+}
+
+.dotsButton {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.optionsMenu {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  background-color: rgb(169, 220, 240);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.deleteButton,
+.cancelButton {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  text-align: left;
+  color: black;
+}
+
+.deleteButton:hover {
+  background-color: #ce3636;
+}
+
+.cancelButton:hover {
+  background-color: #3cc465;
+}
+
