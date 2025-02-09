@@ -1,0 +1,91 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  position: relative; /* To handle positioning of options, etc. */
+}
+
+.messageTop {
+  display: flex;
+  align-items: center; /* Align text and image */
+}
+
+.messageImg {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  border-radius: 50%; /* Make the profile image circular */
+  object-fit: cover; /* Ensure the image fits nicely */
+  margin-right: 10px; /* Space between image and sender name */
+}
+
+.messageSenderName {
+  font-size: 14px; /* Adjust for better readability */
+  font-weight: bold; /* Make the name stand out */
+  color: rgba(0, 0, 0, 0.7); /* A dark color for good contrast */
+  margin-right: 10px; /* Space between name and message text */
+}
+
+.messageText {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #27acac; /* Default background for messages */
+  color: white; /* White text for better readability */
+  max-width: 300px;
+  word-wrap: break-word; /* Ensure long text wraps correctly */
+}
+
+.messageBottom {
+  font-size: 12px;
+  margin-top: 5px; /* Reduce space between the text and time */
+  color: rgb(131, 142, 153);
+}
+
+.message.own {
+  align-items: flex-end;
+}
+
+.message.own .messageText {
+  background-color: rgb(245, 241, 241); /* Background for sender's message */
+  color: black; /* Text color for better contrast */
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.messageActions {
+  display: flex;
+  gap: 5px; /* Space between action buttons */
+  margin-top: 10px;
+}
+
+.messageActions button {
+  padding: 5px 10px; /* Adjust padding for buttons */
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.editBtn, .saveBtn {
+  background-color: #f0f0f0; /* Light gray background for buttons */
+}
+
+.deleteBtn {
+  background-color: #c72323; /* Red for delete button */
+  color: white;
+}
+
+.editBtn:hover, .saveBtn:hover {
+  background-color: #27acac;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background-color: #d9534f; /* Slightly lighter red */
+}
+
+.emojiPickerContainer {
+  position: absolute;
+  z-index: 1000; /* Ensure the emoji picker appears above other elements */
+  bottom: 50px; /* Adjust for positioning */
+  left: 0; /* Align with the input */
+  transform: translateY(-10px); /* Adjust spacing */
+}

@@ -1,0 +1,109 @@
+.messenger {
+  height: calc(100vh - 70px);
+  display: flex;
+  background-color: #f9f9f9; /* Optional background color */
+}
+
+/* Sidebar for group menu */
+.groupMenu {
+  flex: 3;
+  border-right: 1px solid #ddd;
+  background-color: #fff;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Group menu search bar */
+.groupMenuInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Groups list styling */
+.groupList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.groupItem {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.groupItem:hover {
+  background-color: #f1f1f1;
+}
+
+/* Chat box area for selected group */
+.chatBox {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 15px;
+}
+
+.chatBoxTop {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.chatBoxBottom {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatMessageInput {
+  flex: 1;
+  height: 50px;
+  padding: 10px;
+  font-size: medium;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chatSubmitButton {
+  width: 70px;
+  height: 40px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+}
+
+/* Styling for no conversations text */
+.noConversationText {
+  font-size: 20px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .groupMenu {
+    flex: 2;
+  }
+  .chatBox {
+    flex: 8;
+  }
+}

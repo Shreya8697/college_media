@@ -12,7 +12,7 @@ import { AuthContext } from "../../context/AuthContext";
 export default function Profile() {
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const [user, setUser] = useState({});
-  const [followed, setFollowed] = useState(false);
+  const [followed, setFollowed] = useState(false); 
   const [isFollowing, setIsFollowing] = useState(false);
   const [isEditing, setIsEditing] = useState(false); // State to control edit mode
   const [newCoverPicture, setNewCoverPicture] = useState(null);

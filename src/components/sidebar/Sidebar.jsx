@@ -67,8 +67,10 @@ export default function Sidebar() {
             </Link>
             </li>
             <li className="sidebarListItem">
+            <Link to="/groups" style={{ textDecoration: "none", color: "inherit" }}>
               <Groups className="sidebarIcon"/>
               <span className="sidebarlistItemText">Groups</span>
+              </Link>
             </li>
             <li className="sidebarListItem">
               <Event className="sidebarIcon"/>

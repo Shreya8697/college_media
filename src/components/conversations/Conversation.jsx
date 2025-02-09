@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import "./conversation.css";
 import axios from "axios";
-import Modal from 'react-modal'; // Assuming you're using react-modal for modale
+//import Modal from 'react-modal'; // Assuming you're using react-modal for modale
 
 export default function Conversation({ conversations, currentUser, onDelete }) {
   const [user, setUser] = useState(null); // Store user data
   const [lastMessage, setLastMessage] = useState("No messages yet"); // Store the most recent message
   const [showOptions, setShowOptions] = useState(false); // To show or hide delete options
   const PF = process.env.REACT_APP_PUBLIC_FOLDER; // Public folder path
-  const [friends, setFriends] = useState([]); // To store the list of friends
-  const [groupName, setGroupName] = useState(''); // Group name
+  //const [friends, setFriends] = useState([]); // To store the list of friends
+  //const [groupName, setGroupName] = useState(''); // Group name
   const [selectedFriends, setSelectedFriends] = useState([]); // Selected members for the group
-  const [isModalOpen, setIsModalOpen] = useState(false); // For opening/closi
+ // const [isModalOpen, setIsModalOpen] = useState(false); // For opening/closi
 
   useEffect(() => {
     // Fetch user and last message
@@ -78,26 +78,26 @@ export default function Conversation({ conversations, currentUser, onDelete }) {
   }, [currentUser]);
 
   // Handle create group
-  const handleCreateGroup = async () => {
-    if (!groupName || selectedFriends.length === 0) {
-      alert("Please provide a group name and select at least one friend.");
-      return;
-    }
+  // const handleCreateGroup = async () => {
+  //   if (!groupName || selectedFriends.length === 0) {
+  //     alert("Please provide a group name and select at least one friend.");
+  //     return;
+  //   }
 
-    try {
-      // Create group conversation with selected friends and current user
-      const newGroupConversation = {
-        members: [currentUser._id, ...selectedFriends],
-        groupName: groupName,
-      };
+  //   try {
+  //     // Create group conversation with selected friends and current user
+  //     const newGroupConversation = {
+  //       members: [currentUser._id, ...selectedFriends],
+  //       groupName: groupName,
+  //     };
 
-      await axios.post('/conversations/group', newGroupConversation);
-      setIsModalOpen(false); // Close the modal after group creation
-      window.location.reload(); // Reload to show the new group in the conversation list
-    } catch (err) {
-      console.error("Error creating group conversation:", err);
-    }
-  };
+  //     await axios.post('/conversations/group', newGroupConversation);
+  //     setIsModalOpen(false); // Close the modal after group creation
+  //     window.location.reload(); // Reload to show the new group in the conversation list
+  //   } catch (err) {
+  //     console.error("Error creating group conversation:", err);
+  //   }
+  // };
 
   // Handle selecting friends for the group
   const handleFriendSelect = (friendId) => {
